@@ -31,8 +31,9 @@ class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewH
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int position) {
-        ListView listView = (ListView) LayoutInflater.from(parent.getContext()).inflate((R.layout.my_fragment), parent, false);
+    public RecyclerViewAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int position) {
+        ListView listView = (ListView) LayoutInflater.from(parent.getContext()).inflate((R.layout.double_text), parent, false);
+
         return new ViewHolder(listView);
     }
 
